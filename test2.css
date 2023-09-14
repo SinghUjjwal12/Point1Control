@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    /* background-color: rgb(243, 240, 240); */
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/******************************************************************************/
+
+#container-2 .det {
+    /* border: 2px solid black; */
+    height: 40rem;
+    width: 100%;
+    z-index: -12;
+}
+
+
+
+/**/
+#container-2 {
+    /* display: grid;
+    grid-template-columns: repeat(1, auto); */
+    width: 100%;
+}
+
+
+#new {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    padding: 40px;
+    /* border: 2px solid red; */
+    /* margin-top: 100px; */
+    background-color: #c4db6f;
+}
+
+.test p {
+    font-size: 43px;
+    font-weight: bold;
+}
+
+/*design for Boxes*/
+.container-card {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, auto); */
+    /* margin-top: 92px; */
+    background-color: #c4db6f;
+}
+
+.ad p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #c4db6f;
+    border: 0.2px solid red;
+}
+#container-2 .det {
+    /* border: 2px solid black; */
+    height: 40rem;
+    width: 100%;
+    z-index: -12;
+}
+
+.details .ad {
+    /* border: 2px solid red; */
+    margin-top: 23px;
+    margin-left: 18px;
+    font-size: 20px;
+    width: 634px;
+    height: 65px;
+}
+.test h1{
+    font-family: 'Bacasime Antique', serif;
+}
+
+.container-card .card {
+    position: relative;
+    width: 282px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 77px;
+    margin-top: 4px;
+    height: 300px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+
+
+}
+
+.container-card .card:hover {
+    height: 300px;
+
+}
+
+.container-card .card .imgbr {
+    position: absolute;
+    width: 254px;
+    height: 220px;
+    background: #333;
+    top: 20px;
+    border-radius: 12px;
+    transition: 0.5s;
+    overflow: hidden;
+
+}
+
+.container-card .card .imgbr img {
+    height: 60px;
+    height: 60px;
+}
+
+.container-card .card:hover .imgbr {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+
+
+
+}
+
+.container-card .card .imgbr img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.container-card .card .content {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    height: 29px;
+    transition: 0.5s;
+    overflow: hidden;
+    object-fit: cover;
+
+
+
+}
+
+.container-card .card:hover .content {
+    top: 150px;
+    height: 250px;
+
+}
+
+
+.container-card .card .content h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(---clr);
+
+
+}
+
+.container-card .card .content p {
+    color: #333;
+    font-size: 1.05em;
+
+}
+
+
+
+/***********/
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 50px; */
+    flex-direction: column;
+    width: 100%;
+    background-color: #c4db6f;
+}
+
+.foot .foot1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot .mylogo img {
+    height: 30px;
+    margin-bottom: 4px;
+}
+
+.social img {
+    height: 50px;
+    width: 50px;
+}
+
+.foot .foot-img {
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.foot .center {
+    background-color: gray;
+    width: 100%;
+    text-align: center;
+}
+
+.ad {
+    text-align: center;
+}
+
+
+
+
+/***********************************************************/
+
+.item1 img{
+    width: 100%;
+    height: 320px;
+  }
+
+
+
+
+  @media screen and (min-width: 1380px){
+    .item1 img{
+        width: 100%;
+        height: 550px;
+      }
+  }
+
+  @media screen and (max-width: 780px){
+    .hidden{
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: all 1s;
+    }
+    .show{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+  }

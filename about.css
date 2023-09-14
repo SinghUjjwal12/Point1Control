@@ -1,0 +1,149 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+
+.home{
+  display: flex;
+  align-items:start;
+  /* justify-content: center; */
+  flex-direction: column;
+  background: url("jorge-ramirez-2bJ2OH9e9J8-unsplash.jpg")  no-repeat center center/cover;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: 500px;
+}
+.static {
+  /* border: 2px solid red; */
+  background-color: #498f8f7d;
+  border-radius: 12px;
+}
+.static h1 {
+  font-size: 48px;
+  margin: 0 12px 16px 14px;
+  text-align: center;
+  font-family: 'Phudu', cursive;
+}
+
+.home h3 {
+  font-size: 30px;
+  margin-left: 36px;
+  color: #f31f1f;
+  filter: drop-shadow(2px 4px 6px black);
+  font-family: 'Playball', cursive;
+
+}
+
+.mid, .top{
+  background-color:#c4db6f;
+  margin-top: 0px;
+  height: auto;
+}
+
+.set , .jump{
+  /* margin-top: 19px; */
+  display: none;
+    margin-right: 8px;
+}
+
+.down{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 16px; */
+  flex-direction: column;
+}
+
+#text{
+  
+  color: rgb(7, 7, 7);
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.data{
+  height: 249px;
+  width: 310px;
+  margin-top: 16px;
+  flex-direction: column;
+  display: flex;
+  /* border: 2px solid red; */
+  background-color: white;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  filter:drop-shadow(4px 4px 5px  black);
+}
+
+ 
+  img {
+    height: 60%;
+}
+
+
+
+@keyframes jump {
+  0%   {transform:translateY(8px) ;}
+  40%  {transform: translateY(10px);}
+  100% {transform: translateY(12px);}
+}
+.jump {
+  transform-origin: 50% 50%;
+  animation: jump .3s linear alternate infinite;
+  color: white;
+}
+
+
+.main{
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#pro{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  /* border: 2px solid red; */
+  width: 100%;
+}
+
+
+
+  @media screen and (max-width: 630px){
+    .set , .jump{
+      /* margin-top: 19px; */
+      display: block;
+        margin-right: 8px;
+    }
+  }
+  
+  @media screen and (max-width: 660px){
+    .hidden{
+        opacity: 0;
+        filter: blur(4px);
+        transform: translateX(-100%);
+        transition: all 1s;
+    }
+    .show{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+  }
+
+  .comp img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  .comp{
+    padding: 16px;
+    margin-left: 120px;
+  }
