@@ -219,6 +219,8 @@ body {
 .social img {
     height: 50px;
     width: 50px;
+    margin: 8px;
+    border-radius: 50%;
 }
 
 .foot .foot-img {
