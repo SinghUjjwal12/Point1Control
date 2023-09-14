@@ -3,8 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    /* overflow: hidden; */
+    scroll-behavior: smooth;
+}
 body {
+    scroll-behavior: smooth;
+    /* overflow: hidden; */
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
@@ -193,4 +198,18 @@ section#about {
         font-size: 0.9em;
         
     }
+}
+
+
+.map-add{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    flex-wrap: wrap;
+    /* border: 12px solid black; */
+}
+
+#add{
+    padding: 20px;
 }
